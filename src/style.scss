@@ -27,7 +27,7 @@ body {
 header {
 	position: fixed;
 	width: 100%;
-	color: white; 
+	color: white;
 	height: 60px;
 	.container {
 		display: flex;
@@ -88,4 +88,21 @@ header {
 			}
 		}
 	}
+}
+h3 {
+	font-size: 5em;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+}
+
+#section1 {
+	color: #fff;
+}
+.section {
+	height: 100vh;
+}
+
+.fp-section {
+	text-align: center;
 }
