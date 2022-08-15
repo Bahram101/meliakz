@@ -1,0 +1,37 @@
+.leg-massager {
+	background-image: url('../../assets/images/06_back.png');
+
+	.leg-massager__left {
+		width: 50%;
+		display: flex;
+		justify-content: left;
+		img {
+			width: 70%;
+			filter: drop-shadow(8px 11px 8px hsla(0deg, 0%, 0%, 0.7));
+		}
+	}
+	.leg-massager__right {
+		width: 50%;
+		text-align: right;
+		h1 {
+			font-family: 'Akzidenz-Grotesk', sans-serif;
+			font-size: 48px;
+			line-height: 1.7;
+			font-weight: 900;
+			margin-top: -90px;
+		}
+		p {
+			letter-spacing: 0.3px;
+			font-size: 18px;
+			font-family: 'Akzidenz-Grotesk', sans-serif;
+		}
+		button {
+			padding: 13px 33px;
+			background: transparent;
+			color: white;
+			border: 2px solid #16faff;
+			border-radius: 30px;
+			margin-top: 50px;
+		}
+	}
+}
