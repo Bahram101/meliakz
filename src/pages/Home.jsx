@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Video } from '../components/Video';
 import { Iron } from '../components/Iron';
@@ -8,7 +8,6 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import { Footer } from '../components/Footer';
 
 export const Home = () => {
-
 	return (
 		<ReactFullpage
 			anchors={{}}
@@ -23,9 +22,11 @@ export const Home = () => {
 				});
 			}}
 			render={({ state, fullpageApi }) => {
+				console.log('state', state);
+
 				return (
 					<div>
-						<Video />
+						<Video state={state} />
 						<Iron />
 						<LegMassager />
 						<BackMassager />
@@ -34,12 +35,5 @@ export const Home = () => {
 				);
 			}}
 		/>
-
-		// <div>
-		// 	<Video />
-		// 	<Iron />
-		// 	<LegMassager />
-		// 	<BackMassager />
-		// </div>
 	);
 };

@@ -58,7 +58,10 @@ nav {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-
+	&:nth-of-type(5) {
+		height: 20vh;
+		width: 100%;
+	}
 	.container {
 		display: flex;
 		align-items: center;
@@ -69,24 +72,27 @@ nav {
 .footer {
 	padding: 30px 0;
 	background-color: #232323;
-	.col {
-		ul {
-			padding-left: 0;
-			margin-top: 15px;
-			display: flex;
-			li {
-				margin: 0 15px 10px 0;
-				.svg-inline--fa.fa-lg {
-					font-size: 1.5em;
+	.row {
+		width: 100%;
+		.col {
+			ul {
+				padding-left: 0;
+				margin-top: 15px;
+				display: flex;
+				li {
+					margin: 0 15px 10px 0;
+					.svg-inline--fa.fa-lg {
+						font-size: 1.5em;
+					}
 				}
 			}
 		}
-	}
-	.contact {
-		ul {
-			display: block !important;
-			span {
-				margin-left: 10px;
+		.contact {
+			ul {
+				display: block !important;
+				span {
+					margin-left: 10px;
+				}
 			}
 		}
 	}

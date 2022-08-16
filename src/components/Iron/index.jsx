@@ -19,10 +19,8 @@ export const Iron = () => {
 		},
 	});
 
-	
-
 	return (
-		<section className='section iron' style={{height:'100vh'}}>
+		<section className='section iron' style={{ height: '100vh' }}>
 			<Container>
 				<Row>
 					<Col className='iron__left' md={6}>
@@ -44,68 +42,7 @@ export const Iron = () => {
 						</div>
 					</Col>
 					<Col className='iron__right' md={6}>
-						<div className='slider'>
-							<div ref={sliderRef} className='keen-slider'>
-								<div className='keen-slider__slide number-slide1'>
-									<img src={utik1} alt='утюг' />
-								</div>
-								<div className='keen-slider__slide number-slide2'>
-									<img src={utik4} alt='утюг' />
-								</div>
-							</div>
-							{loaded && instanceRef.current && (
-								<>
-									<Arrow
-										left
-										onClick={(e) =>
-											e.stopPropagation() ||
-											instanceRef.current?.prev()
-										}
-										disabled={currentSlide === 0}
-									/>
-
-									<Arrow
-										onClick={(e) =>
-											e.stopPropagation() ||
-											instanceRef.current?.next()
-										}
-										disabled={
-											currentSlide ===
-											instanceRef.current.track.details
-												.slides.length -
-												1
-										}
-									/>
-								</>
-							)}
-						</div>
-						{loaded && instanceRef.current && (
-							<div className='dots'>
-								{[
-									...Array(
-										instanceRef.current.track.details.slides
-											.length
-									).keys(),
-								].map((idx) => {
-									return (
-										<button
-											key={idx}
-											onClick={() => {
-												instanceRef.current?.moveToIdx(
-													idx
-												);
-											}}
-											className={
-												'dot' +
-												(currentSlide === idx
-													? ' active'
-													: '')
-											}
-										></button>
-									);
-								})}
-							</div>
-						)}
+						<img src={utik1} alt='утюг' />
 					</Col>
 				</Row>
 			</Container>
