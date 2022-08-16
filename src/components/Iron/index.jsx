@@ -4,6 +4,7 @@ import utik4 from '../../assets/images/utik_4.png';
 import './iron.scss';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
+import { Container, Row, Col } from 'react-bootstrap';
 
 export const Iron = () => {
 	const [currentSlide, setCurrentSlide] = useState(0);
@@ -20,85 +21,90 @@ export const Iron = () => {
 
 	return (
 		<section className='section iron'>
-			<div className='container'>
-				<div className='iron__left'>
-					<h1>
-						Гладильная система <b>Melia Gold</b>
-					</h1>
-					<p>
-						Это три прибора в одном: утюг, отпариватель для одежды и
-						гладильная доска. Гладильная доска с функциями поддува и
-						отвода пара, сенсорное управление, давление пара – 6
-						Бар, классический дизайн и оптимальная конструкция (в
-						форме передвижного столика на колесиках) – все это
-						гарантирует профессиональный результат глажения с
-						минимальными усилиями.
-					</p>
-					<button>Подробнее</button>
-				</div>
-				<div className='iron__right'>
-					<div className='slider'>
-						<div ref={sliderRef} className='keen-slider'>
-							<div className='keen-slider__slide number-slide1'>
-								<img src={utik1} alt='утюг' />
+			<Container>
+				<Row>
+					<Col className='iron__left' md={6}>
+						<h1>
+							Гладильная система <b>Melia Gold</b>
+						</h1>
+						<p>
+							Это три прибора в одном: утюг, отпариватель для
+							одежды и гладильная доска. Гладильная доска с
+							функциями поддува и отвода пара, сенсорное
+							управление, давление пара – 6 Бар, классический
+							дизайн и оптимальная конструкция (в форме
+							передвижного столика на колесиках) – все это
+							гарантирует профессиональный результат глажения с
+							минимальными усилиями.
+						</p>
+						<button>Подробнее</button>
+					</Col>
+					<Col className='iron__right' md={6}>
+						<div className='slider'>
+							<div ref={sliderRef} className='keen-slider'>
+								<div className='keen-slider__slide number-slide1'>
+									<img src={utik1} alt='утюг' />
+								</div>
+								<div className='keen-slider__slide number-slide2'>
+									<img src={utik4} alt='утюг' />
+								</div>
 							</div>
-							<div className='keen-slider__slide number-slide2'>
-								<img src={utik4} alt='утюг' />
-							</div>
+							{loaded && instanceRef.current && (
+								<>
+									<Arrow
+										left
+										onClick={(e) =>
+											e.stopPropagation() ||
+											instanceRef.current?.prev()
+										}
+										disabled={currentSlide === 0}
+									/>
+
+									<Arrow
+										onClick={(e) =>
+											e.stopPropagation() ||
+											instanceRef.current?.next()
+										}
+										disabled={
+											currentSlide ===
+											instanceRef.current.track.details
+												.slides.length -
+												1
+										}
+									/>
+								</>
+							)}
 						</div>
 						{loaded && instanceRef.current && (
-							<>
-								<Arrow
-									left
-									onClick={(e) =>
-										e.stopPropagation() ||
-										instanceRef.current?.prev()
-									}
-									disabled={currentSlide === 0}
-								/>
-
-								<Arrow
-									onClick={(e) =>
-										e.stopPropagation() ||
-										instanceRef.current?.next()
-									}
-									disabled={
-										currentSlide ===
+							<div className='dots'>
+								{[
+									...Array(
 										instanceRef.current.track.details.slides
-											.length -
-											1
-									}
-								/>
-							</>
+											.length
+									).keys(),
+								].map((idx) => {
+									return (
+										<button
+											key={idx}
+											onClick={() => {
+												instanceRef.current?.moveToIdx(
+													idx
+												);
+											}}
+											className={
+												'dot' +
+												(currentSlide === idx
+													? ' active'
+													: '')
+											}
+										></button>
+									);
+								})}
+							</div>
 						)}
-					</div>
-					{loaded && instanceRef.current && (
-						<div className='dots'>
-							{[
-								...Array(
-									instanceRef.current.track.details.slides
-										.length
-								).keys(),
-							].map((idx) => {
-								return (
-									<button
-										key={idx}
-										onClick={() => {
-											instanceRef.current?.moveToIdx(idx);
-										}}
-										className={
-											'dot' +
-											(currentSlide === idx
-												? ' active'
-												: '')
-										}
-									></button>
-								);
-							})}
-						</div>
-					)}
-				</div>
-			</div>
+					</Col>
+				</Row>
+			</Container>
 		</section>
 	);
 };

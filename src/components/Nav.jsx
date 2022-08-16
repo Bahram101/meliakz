@@ -3,12 +3,12 @@ import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export const Header = () => {
+export const Nav = () => {
 	return (
-		<header>
+		<nav>
 			<Container>
 				<Link to='/'>
-					<div className='header__logo'>
+					<div className='nav__logo'>
 						{/* <img width='38' src={{}} alt='Pizza logo' /> */}
 						<h1>Logo</h1>
 					</div>
@@ -25,6 +25,6 @@ export const Header = () => {
 					</Link>
 				</div>
 			</Container>
-		</header>
+		</nav>
 	);
 };
