@@ -4,16 +4,17 @@ import './leg.scss';
 import { Container, Row, Col } from 'react-bootstrap';
 export const LegMassager = () => {
 	return (
-		<section className='section leg-massager'>
+		<section className='section leg-massager' style={{ height: '100vh' }}>
 			<Container>
 				<Row>
-					<Col md={6}>
-						<div className='leg-massager__left' >
+					<Col md={6} className='leg-massager__left'>
+						<div className='innerCol'>
 							<img src={leg1} alt='утюг' />
 						</div>
 					</Col>
-					<Col md={6}>
-						<div className='leg-massager__right'>
+
+					<Col md={6} className='leg-massager__right'>
+						<div className='innerCol'>
 							<h1>Массажер для ног</h1>
 							<p>
 								Это три прибора в одном: утюг, отпариватель для

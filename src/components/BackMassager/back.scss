@@ -2,7 +2,8 @@
 	background-image: url('../../assets/images/05_back.png');
 
 	.back-massager__left {
-		width: 50%;
+		display: flex;
+		align-items: center;
 		h1 {
 			font-family: 'Akzidenz-Grotesk', sans-serif;
 			font-size: 48px;
@@ -25,7 +26,8 @@
 		}
 	}
 	.back-massager__right {
-		width: 50%;
+		display: flex;
+		align-items: center;
 		display: flex;
 		justify-content: right;
 		img {
