@@ -10,8 +10,12 @@ import { Nav } from './components/Nav';
 import { Footer } from './components/Footer';
 
 function App() {
+
+	
+
 	return (
 		<div className='App'>
+			<span className="page">1/5</span>
 			{/* <Routes>
 				<Route path='/' element={<Layout />}>
 					<Route path="" element={<Home />} />
