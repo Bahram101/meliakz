@@ -10,11 +10,11 @@ import {
 
 export const Footer = () => {
 	return (
-		<section className='section' >
-			<div className='footer'>
+		// <section className='section' >
+			<div className='section footer'>
 				<Container>
 					<Row>
-						<Col>
+						<Col md={4}>
 							<h4>Social websites</h4>
 							<div className='socialIcons'>
 								<ul>
@@ -54,7 +54,7 @@ export const Footer = () => {
 								</ul>
 							</div>
 						</Col>
-						<Col className='contact'>
+						<Col md={4} className='contact'>
 							<h4>Contact</h4>
 							<ul>
 								<li>
@@ -79,12 +79,12 @@ export const Footer = () => {
 								</li>
 							</ul>
 						</Col>
-						<Col>
+						<Col md={4}>
 							<h4>Address</h4>
 						</Col>
 					</Row>
 				</Container>
 			</div>
-		</section>
+		// </section>
 	);
 };

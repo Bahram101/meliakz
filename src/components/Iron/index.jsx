@@ -5,37 +5,20 @@ import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import Modal from 'react-awesome-modal';
+import { Link } from 'react-router-dom';
 
 export const Iron = () => {
-	const [visible, setVisible] = useState(false);
-	const ironRef = useRef()
-
-	console.log('ironRef', ironRef)
-
 	return (
 		<>
-			<section ref={ironRef}
+			<section
 				className='section iron'
 				style={{ height: '100vh', position: 'relative' }}
 			>
-				<Modal
-					className='modal'
-					visible={visible}
-					effect='fadeInUp'
-					style={{ position: 'absolute !important' }}
-				>
-					<div className='modalContent'>
-						Modal{' '}
-						<span onClick={() => setVisible(false)}>Close</span>
-					</div>
-				</Modal>
 				<Container>
 					<Row>
 						<Col className='iron__left' md={6}>
 							<div className='innerCol'>
-								<h1>
-									Гладильная система <b>Melia Gold</b>
-								</h1>
+								<h2>Гладильная система Melia Gold</h2>
 								<p>
 									Это три прибора в одном: утюг, отпариватель
 									для одежды и гладильная доска. Гладильная
@@ -47,14 +30,19 @@ export const Iron = () => {
 									профессиональный результат глажения с
 									минимальными усилиями.
 								</p>
-								<button onClick={() => setVisible(true)}>
-									Подробнее
-								</button>
+								<Link to='/product/1'>
+									<button>Подробнее</button>
+								</Link>
 							</div>
 						</Col>
 						<Col className='iron__right' md={6}>
 							<img src={utik1} alt='утюг' />
 						</Col>
+						<div className="btnCol">
+							<Link to='/product/1'>
+								<button>Подробнее</button>
+							</Link>
+						</div>
 					</Row>
 				</Container>
 			</section>

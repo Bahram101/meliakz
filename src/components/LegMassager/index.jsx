@@ -2,6 +2,7 @@ import React from 'react';
 import leg1 from '../../assets/images/leg1.png';
 import './leg.scss';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 export const LegMassager = () => {
 	return (
 		<section className='section leg-massager' style={{ height: '100vh' }}>
@@ -26,7 +27,9 @@ export const LegMassager = () => {
 								гарантирует профессиональный результат глажения
 								с минимальными усилиями.
 							</p>
-							<button>Подробнее</button>
+							<Link to='/product/2'>
+								<button>Подробнее</button>
+							</Link>
 						</div>
 					</Col>
 				</Row>
