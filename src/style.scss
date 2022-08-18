@@ -60,15 +60,12 @@ nav {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	// &:nth-of-type(5) {
-	// 	height: 19vh;
-
+ 
+	// .container {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	height: inherit;
 	// }
-	.container {
-		display: flex;
-		align-items: center;
-		height: inherit;
-	}
 }
 
 .footer {

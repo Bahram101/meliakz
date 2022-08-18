@@ -5,17 +5,12 @@ import { About } from './pages/About';
 import { Home } from './pages/Home';
 import { Blog } from './pages/Blog';
 import { NotFound } from './pages/NotFound';
-import './style.scss';
-import { Nav } from './components/Nav';
-import { Footer } from './components/Footer';
 import {Product} from './pages/Product'
+import './style.scss';
 
 function App() {
 	return (
 		<div className='App'>
-			{/* <Nav />
-			<Home />
-			<Footer/> */}
 			<Routes>
 				<Route path='/' element={<Layout />}>
 					<Route path='' element={<Home />} />

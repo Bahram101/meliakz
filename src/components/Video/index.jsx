@@ -15,7 +15,7 @@ export const Video = (props) => {
 	return (
 		<section className='section video-block'>
 			{/* <img src={logo} alt='лого' /> */}	
-			<video id='bgVideo' autoPlay loop muted playsInline>
+			<video autoPlay id='bgVideo' loop muted playsInline>
 				<source src={video} type='video/mp4' />
 			</video>
 		</section>

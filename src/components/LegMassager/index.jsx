@@ -5,27 +5,24 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 export const LegMassager = () => {
 	return (
-		<section className='section leg-massager' style={{ height: '100vh' }}>
+		<section className='section leg-massager'>
 			<Container>
 				<Row>
-					<Col md={6} className='leg-massager__left'>
+					<Col className='leg-massager__left' md={6}>
 						<div className='innerCol'>
+							{/* <h2>Melia Foot</h2> */}
 							<img src={leg1} alt='утюг' />
 						</div>
 					</Col>
 
-					<Col md={6} className='leg-massager__right'>
+					<Col className='leg-massager__right' md={6}>
 						<div className='innerCol'>
-							<h1>Массажер для ног</h1>
+							<h2>Melia Foot</h2>
 							<p>
-								Это три прибора в одном: утюг, отпариватель для
-								одежды и гладильная доска. Гладильная доска с
-								функциями поддува и отвода пара, сенсорное
-								управление, давление пара – 6 Бар, классический
-								дизайн и оптимальная конструкция (в форме
-								передвижного столика на колесиках) – все это
-								гарантирует профессиональный результат глажения
-								с минимальными усилиями.
+								Идеально подходит, если вы: Проводите много
+								времени на каблуках и у вас ноют ноги и болят
+								икры. Занимаетесь спортом и хотите быстрее
+								воcстановиться после тренировки.
 							</p>
 							<Link to='/product/2'>
 								<button>Подробнее</button>
@@ -33,6 +30,12 @@ export const LegMassager = () => {
 						</div>
 					</Col>
 				</Row>
+
+				<div className='btnCol'>
+					<Link to='/product/2'>
+						<button>Подробнее</button>
+					</Link>
+				</div>
 			</Container>
 		</section>
 	);

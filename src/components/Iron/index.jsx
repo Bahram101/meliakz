@@ -10,10 +10,7 @@ import { Link } from 'react-router-dom';
 export const Iron = () => {
 	return (
 		<>
-			<section
-				className='section iron'
-				style={{ height: '100vh', position: 'relative' }}
-			>
+			<section className='section iron'>
 				<Container>
 					<Row>
 						<Col className='iron__left' md={6}>
@@ -38,7 +35,7 @@ export const Iron = () => {
 						<Col className='iron__right' md={6}>
 							<img src={utik1} alt='утюг' />
 						</Col>
-						<div className="btnCol">
+						<div className='btnCol'>
 							<Link to='/product/1'>
 								<button>Подробнее</button>
 							</Link>
