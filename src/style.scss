@@ -50,28 +50,27 @@ nav {
 				margin-left: 20px;
 				font-size: 18px;
 			}
+			.tel {
+				font-size: 15px;
+				font-family: 'Akzidenz-Grotesk', sans-serif;
+			}
 		}
 	}
 }
- 
 
-.section {
-	height: 100vh;
+.section { 
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
- 
-	// .container {
-	// 	display: flex;
-	// 	align-items: center;
-	// 	height: inherit;
-	// }
+
+	 
 }
 
 .footer {
 	padding: 30px 0;
 	background-color: #232323;
 	height: auto;
+
 	.container {
 		height: 100%;
 
@@ -97,6 +96,24 @@ nav {
 						margin-left: 10px;
 					}
 				}
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.container {
+		padding: 0 20px;
+		.col-md-4 { 
+			text-align: center;
+			margin-bottom: 20px;
+			.socialIcons {
+				display: flex;
+				justify-content: center;				
+			}
+			ul{
+				margin-top: 0 !important;
+				margin-bottom: 0 !important;
+
 			}
 		}
 	}

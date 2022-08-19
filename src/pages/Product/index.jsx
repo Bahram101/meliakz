@@ -12,12 +12,8 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 export const Product = () => {
 	const url = window.location.pathname;
 	const id = url.slice(-1);
+	console.log('id', id)
 
-	const products = [
-		{ id: 1, name: 'Iron' },
-		{ id: 2, name: 'Back massager' },
-		{ id: 3, name: 'Leg massager' },
-	];
 	const [currentSlide, setCurrentSlide] = useState(0);
 	const [loaded, setLoaded] = useState(false);
 	const [sliderRef, instanceRef] = useKeenSlider({
@@ -42,7 +38,7 @@ export const Product = () => {
 					</Link>
 				</Row>
 				<Row className='row2'>
-					<Col md={6}>
+					<Col md={6} className='sliderBlock'>
 						<div className='slider'>
 							<>
 								<div className='navigation-wrapper'>
@@ -133,68 +129,54 @@ export const Product = () => {
 								</tr> */}
 								<tr>
 									<td>Тип:</td>
-									<td className='text-right'>
-										<strong>Напольный</strong>
-									</td>
+									<td className='text-right'>напольный</td>
 								</tr>
 								<tr>
 									<td>Вид:</td>
 									<td className='text-right'>
-										<strong>массажавибрационный</strong>
+										массажавибрационный
 									</td>
 								</tr>
 								<tr>
 									<td>Зона:</td>
 									<td className='text-right'>
-										<strong>Массажаколени</strong>
+										массажаколени
 									</td>
 								</tr>
 								<tr>
 									<td>Количество режимов работы/модулей:</td>
-									<td className='text-right'>
-										<strong>4</strong>
-									</td>
+									<td className='text-right'>4</td>
 								</tr>
 								<tr>
 									<td>Материал массажных элементов:</td>
 									<td className='text-right'>
-										<strong>Текстиль, пластик</strong>
+										Текстиль, пластик
 									</td>
 								</tr>
 								<tr>
 									<td>Особенности:</td>
-									<td className='text-right'>
-										<strong>Подогрев</strong>
-									</td>
+									<td className='text-right'>Подогрев</td>
 								</tr>
 								<tr>
 									<td>Питание:</td>
-									<td className='text-right'>
-										<strong>От сети</strong>
-									</td>
+									<td className='text-right'>От сети</td>
 								</tr>
 								<tr>
 									<td>Время работы:</td>
-									<td className='text-right'>
-										<strong>15 мин</strong>
-									</td>
+									<td className='text-right'>15 мин</td>
 								</tr>
 								<tr>
 									<td>Мощность:</td>
-									<td className='text-right'>
-										<strong>55 Вт</strong>
-									</td>
+									<td className='text-right'>55 Вт</td>
 								</tr>
 								<tr>
 									<td>batteryCapacity:</td>
-									<td className='text-right'>
-										<strong>3000mAh</strong>
-									</td>
+									<td className='text-right'>3000mAh</td>
 								</tr>
 								<tr>
 									<td>Цвет:</td>
 									<td className='text-right'>
-										<strong>Черный, серый</strong>
+										Черный, серый
 									</td>
 								</tr>
 							</tbody>

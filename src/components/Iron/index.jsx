@@ -10,12 +10,15 @@ import { Link } from 'react-router-dom';
 export const Iron = () => {
 	return (
 		<>
-			<section className='section iron'>
+			<section className='section iron' style={{ height: '100vh' }}>
 				<Container>
 					<Row>
 						<Col className='iron__left' md={6}>
 							<div className='innerCol'>
-								<h2>Гладильная система Melia Gold</h2>
+								<h2>
+									Гладильная система <br />
+									Melia Gold
+								</h2>
 								<p>
 									Это три прибора в одном: утюг, отпариватель
 									для одежды и гладильная доска. Гладильная
