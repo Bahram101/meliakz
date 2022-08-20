@@ -14,10 +14,10 @@ export const Map = () => {
               <h2>Заявка на бесплатную демонстрацию</h2>
               <div className="">
                 <div className="demoContacts">
-                  <a href="tel:7071302100">
+                  <a href="tel:+77076395949">
                     <FontAwesomeIcon icon={faPhone} />
                     <span style={{ marginLeft: "5px" }}>
-                      +7 (701) 272 40 40
+                      +7 (707) 639-59-49
                     </span>
                   </a>
                 </div>
@@ -27,7 +27,7 @@ export const Map = () => {
                     <span style={{ marginLeft: "5px" }}>
                       meliaalmaty@gmail.com
                     </span>
-                  </a> 
+                  </a>
                 </div>
                 <div>г. Алматы мамыр 4 дом 5</div>
               </div>

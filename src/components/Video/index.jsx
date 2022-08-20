@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../../assets/images/logo2.png';
 import video from '../../assets/video.mp4';
+import back1 from '../../assets/images/back1.jpg';
 import './video.scss';
 
 export const Video = (props) => {
@@ -15,9 +16,9 @@ export const Video = (props) => {
 	return (
 		<section className='section video-block' style={{height:'100vh'}}>
 			<img src={logo} alt='лого' />	
-			<video autoPlay id='bgVideo' loop muted playsInline>
+			{/* <video autoPlay id='bgVideo' loop muted playsInline>
 				<source src={video} type='video/mp4' />
-			</video>
+			</video> */}
 		</section>
 	);
 };

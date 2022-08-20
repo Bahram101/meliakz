@@ -34,7 +34,7 @@ export const Footer = () => {
                   </li>
                 </a>
                 <a
-                  href="https://web.whatsapp.com/send?phone=77073763659"
+                  href="https://wa.me/77076395949"
                   target="_blank"
                 >
                   <li>
@@ -48,9 +48,9 @@ export const Footer = () => {
             <h4>Contact</h4>
             <ul>
               <li>
-                <a href="tel:7071302100">
+                <a href="tel:+77076395949">
                   <FontAwesomeIcon icon={faPhone} />
-                  <span>+7 (707) 300-08-77</span>
+                  <span>+7 (707) 639-59-49</span>
                 </a>
               </li>
               <li>
