@@ -61,12 +61,18 @@ export const Nnn = () => {
                 aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
                 placement="end"
               >
-                <Offcanvas.Header closeButton></Offcanvas.Header>
+                <Offcanvas.Header closeButton> </Offcanvas.Header>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                   <ul>
-                    <li><a></a>  Главная</li>
-                    <li>Отзывы</li>
-                    <li>О нас</li>
+                    <li>
+                      <a href="/"> Главная</a>
+                    </li>
+                    <li>
+                      <a href="/comments">Отзывы</a>
+                    </li>
+                    <li>
+                      <a href="/about">О нас</a>
+                    </li>
                   </ul>
                 </Offcanvas.Title>
               </Navbar.Offcanvas>

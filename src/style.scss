@@ -58,12 +58,50 @@ body {
       button {
         span {
           background-image: url("assets/images/burger.png");
+          background-repeat: no-repeat;
           //   background-image: url("assets/images/bars-solid.svg");
           display: none;
+          width: 23px;
         }
       }
     }
   }
+}
+
+.aboutUs {
+  background-color: #28292c;
+  min-height: 100vh;
+  .row1 {
+    padding-top: 100px;
+    margin-bottom: 60px;
+    span {
+      padding: 7px;
+      border-radius: 7px;
+      &:hover {
+        border: 1px solid #16faff;
+      }
+      .fa-chevron-left {
+        margin-right: 10px;
+      }
+    }
+  }
+  .row2{
+    h2{
+      font-family: "Akzidenz-Grotesk";
+      margin-bottom: 30px;
+    }
+    p{
+      font-family: Verdana;
+      font-weight: normal;
+    }
+  }
+  .imgBlock{
+    text-align: center;
+    img {
+      width: 80%;
+    }
+  }
+  
 }
 
 .section {
@@ -107,25 +145,43 @@ body {
   }
 }
 
-.offcanvas{
-	background-color: #2ec0c4 !important;
-	.offcanvas-header{
-		position: relative;
-		button{
-			position: absolute;
-			top:25px;
-			right: 25px;
-		}
-	}
-	.offcanvas-title{
-		padding-top:12px;
-		height:100%;
-		ul{
-			li{
-				margin-bottom: 10px;;
-			}
-		}
-	}
+.offcanvas {
+  background-color: #2ec0c4 !important;
+  .offcanvas-header {
+    position: relative;
+    button {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      // display: none;
+    }
+    // span{
+    //   background-image: url('assets/images/close2.png') !important;
+    //   width: 23px;
+    //   height: 23px;
+    // }
+  }
+  .offcanvas-title {
+    padding-top: 12px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    ul {
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: -100px;
+      width: 100%;
+      li {
+        margin-bottom: 10px;
+        a {
+          font-size: 25px;
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -144,9 +200,9 @@ body {
       }
     }
     nav {
-		margin-left: 18px;
+      margin-left: 18px;
       button {
-        span { 
+        span {
           display: block !important;
         }
       }

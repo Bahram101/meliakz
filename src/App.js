@@ -6,8 +6,7 @@ import { Home } from './pages/Home';
 import { Comments } from './pages/Comments';
 import { NotFound } from './pages/NotFound';
 import { Product } from './pages/Product';
-import './style.scss';
-import { Menu } from './components/Menu';
+import './style.scss'; 
 
 function App() {
 	return (
@@ -21,7 +20,6 @@ function App() {
 					<Route path='*' element={<NotFound />} />
 				</Route>
 			</Routes>
-			<Menu/>
 		</div>
 	);
 }
