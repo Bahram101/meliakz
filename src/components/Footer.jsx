@@ -14,7 +14,7 @@ export const Footer = () => {
       <Container>
         <Row>
           <Col md={4}>
-            <h4>Social websites</h4>
+            <h4>Социальные сети</h4>
             <div className="socialIcons">
               <ul>
                 <a
@@ -45,7 +45,7 @@ export const Footer = () => {
             </div>
           </Col>
           <Col md={4} className="contact">
-            <h4>Contact</h4>
+            <h4>Контакты</h4>
             <ul>
               <li>
                 <a href="tel:+77076395949">
@@ -62,7 +62,7 @@ export const Footer = () => {
             </ul>
           </Col>
           <Col md={4}>
-            <h4>Address</h4>
+            <h4>Адрес</h4>
             <p>мкр.Мамыр 4, д.5, г.Алматы </p>
           </Col>
         </Row>

@@ -24,16 +24,16 @@ export const Navs = () => {
           </div>
         </Link>
         <div className="menu">
-          <a href="/" className="menu-item d-none d-md-block">
+          <a href="/" className="menu-item d-none d-md-block bottomLine">
             Главная
           </a>
-          <a href="/comments" className="menu-item d-none d-md-block">
+          <a href="/comments" className="menu-item d-none d-md-block bottomLine">
             Отзывы
           </a>
-          <a href="about" className="menu-item d-none d-md-block">
+          <a href="about" className="menu-item d-none d-md-block bottomLine">
             О нас
           </a>
-          <a href="tel:+77076395949" className="menu-item d-none d-md-block">
+          <a href="tel:+77076395949" className="menu-item d-none d-md-block bottomLine">
             +7 (707) 639-59-49
           </a>
           <a

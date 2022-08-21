@@ -53,6 +53,22 @@ body {
         // font-family: 'Akzidenz-Grotesk', sans-serif;
         font-family: Verdana, sans-serif;
       }
+      .bottomLine {
+        position: relative;
+        &:after {
+          content: "";
+          width: 0%;
+          height: 1px;
+          background-color: white;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          transition:0.3s;
+        }
+        &:hover:after{
+          width: 100%;
+        }
+      }
     }
     nav {
       button {
@@ -103,14 +119,14 @@ body {
   }
 }
 
-.product{
-  .row3{
+.product {
+  .row3 {
     margin-top: 50px;
-    h2{
+    h2 {
       margin-bottom: 20px;
     }
-    div{
-      div{
+    div {
+      div {
         margin-bottom: 20px;
       }
     }
@@ -191,7 +207,7 @@ body {
     height: 100%;
 
     .row {
-      margin-left:5px;
+      margin-left: 5px;
       width: 100%;
       .col-md-4 {
         ul {
