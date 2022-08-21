@@ -19,31 +19,18 @@ export const About = () => {
           <Col>
             <h2>О нашей компании</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-              eveniet adipisci. Esse porro delectus provident ex doloribus
-              repellat ad illum adipisci. Porro animi placeat incidunt totam,
-              earum quasi voluptates molestias?Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Cupiditate, totam deserunt dolorem
-              iure eveniet facere et repudiandae numquam, consequuntur deleniti
-              iste dignissimos quibusdam veniam maiores quaerat consequatur
-              praesentium quas aliquid.
+              Компания занимается организацией международного маркетинга и О
+              КОМПАНИИ продажей продукции «MELIA KAZAKHSTAN» Компания «MELIA
+              KAZAKHSTAN» на постоянной основе занимается научными
+              исследованиями и инновационными технологиями Компания «MELIA
+              KAZAKHSTAN» имеет тысячи довольных клиентов по всему Казахстану
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-              eveniet adipisci. Esse porro delectus provident ex doloribus
-              repellat ad illum adipisci. Porro animi placeat incidunt totam,
-              earum quasi voluptates molestias?Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Cupiditate, totam deserunt dolorem
-              iure eveniet facere et repudiandae numquam, consequuntur deleniti
-              iste dignissimos quibusdam veniam maiores quaerat consequatur
-              praesentium quas aliquid.
-            </p>
-            <div className="imgBlock">
-              <img src={ofis} alt="" />
-            </div>
           </Col>
         </Row>
       </Container>
+      <div className="imgBlock">
+        <img src={ofis} alt="" />
+      </div>
     </div>
   );
 };

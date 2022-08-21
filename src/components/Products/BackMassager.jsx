@@ -7,6 +7,7 @@ import "keen-slider/keen-slider.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import "../../pages/Product/product.scss";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"; 
 
 export const BackMassager = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -144,6 +145,30 @@ export const BackMassager = () => {
             </table>
           </Col>
         </Row>
+        <Row className="row3">
+            <Col  >
+              <h2>Заявка на бесплатную демонстрацию</h2>
+              <div className="">
+                <div className="demoContacts">
+                  <a href="tel:+77076395949">
+                    <FontAwesomeIcon icon={faPhone} />
+                    <span style={{ marginLeft: "5px" }}>
+                      +7 (707) 639-59-49
+                    </span>
+                  </a>
+                </div>
+                <div>
+                  <a href="mailto:meliaalmaty@gmail.com">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    <span style={{ marginLeft: "5px" }}>
+                      meliaalmaty@gmail.com
+                    </span>
+                  </a>
+                </div>
+                <div>г. Алматы мамыр 4 дом 5</div>
+              </div>
+            </Col>
+          </Row>
       </Container>
     </div>
   );

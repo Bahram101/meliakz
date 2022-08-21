@@ -69,7 +69,8 @@ body {
 
 .aboutUs {
   background-color: #28292c;
-  min-height: 100vh;
+  // min-height: 100vh;
+  // min-height: 100vh;
   .row1 {
     padding-top: 100px;
     margin-bottom: 60px;
@@ -95,9 +96,23 @@ body {
     }
   }
   .imgBlock {
-    text-align: center;
+    text-align: right;
     img {
       width: 80%;
+    }
+  }
+}
+
+.product{
+  .row3{
+    margin-top: 50px;
+    h2{
+      margin-bottom: 20px;
+    }
+    div{
+      div{
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -176,6 +191,7 @@ body {
     height: 100%;
 
     .row {
+      margin-left:5px;
       width: 100%;
       .col-md-4 {
         ul {
