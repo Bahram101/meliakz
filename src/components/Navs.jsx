@@ -14,7 +14,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
-export const Nnn = () => {
+export const Navs = () => {
   return (
     <div className="navBar">
       <Container>

@@ -1,11 +1,11 @@
 import { Outlet } from 'react-router-dom';
-import { Nnn } from './Nnn';
+import { Navs } from './Navs';
 import { Footer } from './Footer';
 
 export const Layout = () => {
 	return (
 		<>
-			<Nnn />
+			<Navs />
 			<Outlet />
 			<Footer />
 		</>
