@@ -1,18 +1,10 @@
-import React from "react";
-// import { Container } from "react-bootstrap";
+import React from "react"; 
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import logo3 from "../assets/images/logo3.png";
-
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Offcanvas from "react-bootstrap/Offcanvas";
+import logo3 from "../assets/images/logo3.png"; 
+import {Container, Navbar, Offcanvas} from "react-bootstrap"; 
 
 export const Navs = () => {
   return (

@@ -1,10 +1,8 @@
 import React, { useState, useRef } from 'react';
 import utik1 from '../../assets/images/utik_1.png';
-import './iron.scss';
-import { useKeenSlider } from 'keen-slider/react';
+import './iron.scss'; 
 import 'keen-slider/keen-slider.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import Modal from 'react-awesome-modal';
 import { Link } from 'react-router-dom';
 
 export const Iron = () => {
