@@ -23,15 +23,14 @@ export const Home = () => {
 				});
 			}}
 			render={({ state, fullpageApi }) => {
-				console.log('state', state); 
-
+				console.log('state', state);
 				return (
 					<div>
 						<Video state={state} />
 						<Iron />
 						<LegMassager />
 						<BackMassager />
-						<Map/>
+						{/* <Map/> */}
 						<Footer />
 					</div>
 				);

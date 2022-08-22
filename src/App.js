@@ -11,6 +11,7 @@ import './style.scss';
 function App() {
 	return (
 		<div className='App'>
+			{/* <Layout /> */}
 			<Routes>
 				<Route path='/' element={<Layout />}>
 					<Route path='' element={<Home />} />
