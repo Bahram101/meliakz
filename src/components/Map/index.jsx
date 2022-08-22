@@ -1,5 +1,4 @@
 import React from "react";
-import YandexMapConstructor from "react-yandex-maps-constructor";
 import "./map.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -35,9 +34,9 @@ export const Map = () => {
           </Row>
         </Container>
       </div>
-      <div style={{ height: "58vh" }}>
+      {/* <div style={{ height: "58vh" }}>
         <YandexMapConstructor script='<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ace954db350c7437dcd3b618a7a08a0f14280493319468b0fbd296fa071b850fb&amp;width=100%&amp;height=100vh&amp;lang=ru_RU&amp;scroll=true"></script>' />
-      </div>
+      </div> */}
     </div>
   );
 };
