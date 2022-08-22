@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../../assets/images/logo2.png';
+import logo from '../../assets/images/logo3.png';
 import video from '../../assets/video.mp4';
 import back1 from '../../assets/images/back1.jpg';
 import './video.scss';
