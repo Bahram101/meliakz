@@ -72,7 +72,7 @@ export const Footer = () => {
 					</Col>
 					<Col md={4}>
 						<h4>Адрес</h4>
-						<p>Алматы, мкр. Мамыр 4, 5 </p>
+						<p>г. Алматы, мкр. Мамыр 4, 5 </p>
 					</Col>
 				</Row>
 			</Container>
