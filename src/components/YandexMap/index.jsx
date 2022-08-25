@@ -3,7 +3,9 @@ import "./map.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-export const Map = () => {
+import { YMaps, Map, Placemark } from "react-yandex-maps";
+
+export const YandexMap = () => {
   return (
     <div className="section mapYandex" style={{ height: "100vh" }}>
       <div className="demo" style={{ height: "42vh" }}>
@@ -34,9 +36,14 @@ export const Map = () => {
           </Row>
         </Container>
       </div>
-      {/* <div style={{ height: "58vh" }}>
-        <YandexMapConstructor script='<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ace954db350c7437dcd3b618a7a08a0f14280493319468b0fbd296fa071b850fb&amp;width=100%&amp;height=100vh&amp;lang=ru_RU&amp;scroll=true"></script>' />
-      </div> */}
+      <YMaps>
+        <div>
+          My awesome application with maps!
+          <Map defaultState={{ center: [43.215065, 76.840982], zoom: 6 }} >
+            <Placemark geometry={[43.215065, 76.840982]}/>  
+          </Map>
+        </div>
+      </YMaps>
     </div>
   );
 };

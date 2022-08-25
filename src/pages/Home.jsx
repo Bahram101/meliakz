@@ -6,7 +6,7 @@ import { LegMassager } from '../components/LegMassager';
 import { BackMassager } from '../components/BackMassager';
 import ReactFullpage from '@fullpage/react-fullpage';
 import { Footer } from '../components/Footer';
-import { Map } from '../components/Map';
+import { YandexMap } from '../components/YandexMap';
 
 export const Home = () => {
 	return (
@@ -30,7 +30,7 @@ export const Home = () => {
 						<Iron />
 						<LegMassager />
 						<BackMassager />
-						{/* <Map/> */}
+						<YandexMap/>
 						<Footer />
 					</div>
 				);
