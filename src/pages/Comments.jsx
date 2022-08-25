@@ -69,7 +69,7 @@ export const Comments = () => {
                         получила свою покупку! Большое Спасибо
                       </p>
                     </div>
-                    <div className="keen-slider__slide number-slide2">
+                    <div className="keen-slider__slide number-slide3">
                       <div className="userImg">
                         <img src={user1} alt="" />
                       </div>
@@ -79,7 +79,7 @@ export const Comments = () => {
                         систем
                       </p>
                     </div>
-                    <div className="keen-slider__slide number-slide2">
+                    <div className="keen-slider__slide number-slide4">
                       <div className="userImg">
                         <img src={user1} alt="" />
                       </div>
@@ -98,7 +98,7 @@ export const Comments = () => {
                         СПАСИБО,всем довольна!
                       </p>
                     </div>
-                    <div className="keen-slider__slide number-slide2">
+                    <div className="keen-slider__slide number-slide5">
                       <div className="userImg">
                         <img src={user1} alt="" />
                       </div>
@@ -110,7 +110,7 @@ export const Comments = () => {
                         однажды надоело, и я нашла гладильную систему Мелия
                       </p>
                     </div>
-                    <div className="keen-slider__slide number-slide2">
+                    <div className="keen-slider__slide number-slide6">
                       <div className="userImg">
                         <img src={user1} alt="" />
                       </div>

@@ -150,10 +150,10 @@ export const BackMassager = () => {
               <h2>Заявка на бесплатную демонстрацию</h2>
               <div className="">
                 <div className="demoContacts">
-                  <a href="tel:+77076395949">
+                  <a href="tel:+77071045052">
                     <FontAwesomeIcon icon={faPhone} />
                     <span style={{ marginLeft: "5px" }}>
-                      +7 (707) 639-59-49
+                      +7 (701) 104 5052
                     </span>
                   </a>
                 </div>
