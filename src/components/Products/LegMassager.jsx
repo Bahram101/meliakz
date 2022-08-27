@@ -7,7 +7,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"; 
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const LegMassager = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -31,6 +31,9 @@ export const LegMassager = () => {
               <FontAwesomeIcon icon={faChevronLeft} size="sm" /> Вернуться
             </span>
           </a>
+        </Row>
+        <Row>
+          <h1 className="title">Melia Foot</h1>
         </Row>
         <Row className="row2">
           <Col md={6} className="sliderBlock">

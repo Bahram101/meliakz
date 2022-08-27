@@ -8,6 +8,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import { Footer } from '../components/Footer';
 import { YandexMap } from '../components/YandexMap';
 import { Slider } from '../components/Slider';
+import { Slider2 } from '../components/Slider2';
 
 export const Home = () => {
 	return (
@@ -32,6 +33,7 @@ export const Home = () => {
 						<LegMassager />
 						<BackMassager />
 						<Slider/>
+						<Slider2/>
 						<YandexMap/>
 						<Footer />
 					</div>

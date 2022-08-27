@@ -14,7 +14,7 @@ import {
 export const YandexMap = () => {
 	return (
 		<div className='section mapYandex' style={{ height: '100vh' }}>
-			<div className='demo' style={{ height: '42vh' }}>
+			<div className='demo' style={{ height: '45vh' }}>
 				<Container>
 					<Row>
 						<Col md={{ span: 8, offset: 2 }}>
@@ -43,7 +43,7 @@ export const YandexMap = () => {
 				</Container>
 			</div>
 			<YMaps>
-				<div style={{ height: '58vh' }}>
+				<div style={{ height: '55vh' }}>
 					<Map
 						style={{ width: '100wh', height: '100vh' }}
 						defaultState={{

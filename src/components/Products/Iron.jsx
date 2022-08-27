@@ -7,7 +7,7 @@ import "keen-slider/keen-slider.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import "../../pages/Product/product.scss";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"; 
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const Iron = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -32,6 +32,10 @@ export const Iron = () => {
             </span>
           </a>
         </Row>
+        <Row>
+          <h1 className="title">Гладильная система Melia Black Edition</h1>
+        </Row>
+
         <Row className="row2">
           <Col md={6} className="sliderBlock">
             <div className="slider">
@@ -148,29 +152,27 @@ export const Iron = () => {
           </Col>
         </Row>
         <Row className="row3">
-            <Col  >
-              <h2>Заявка на бесплатную демонстрацию</h2>
-              <div className="">
-                <div className="demoContacts">
-                  <a href="tel:+77075045052">
-                    <FontAwesomeIcon icon={faPhone} />
-                    <span style={{ marginLeft: "5px" }}>
-                      +7 (707) 504-50-52
-                    </span>
-                  </a>
-                </div>
-                <div>
-                  <a href="mailto:meliaalmaty@gmail.com">
-                    <FontAwesomeIcon icon={faEnvelope} />
-                    <span style={{ marginLeft: "5px" }}>
-                      meliaalmaty@gmail.com
-                    </span>
-                  </a>
-                </div>
-                <div>г. Алматы мамыр 4 дом 5</div>
+          <Col>
+            <h2>Заявка на бесплатную демонстрацию</h2>
+            <div className="">
+              <div className="demoContacts">
+                <a href="tel:+77075045052">
+                  <FontAwesomeIcon icon={faPhone} />
+                  <span style={{ marginLeft: "5px" }}>+7 (707) 504-50-52</span>
+                </a>
               </div>
-            </Col>
-          </Row>
+              <div>
+                <a href="mailto:meliaalmaty@gmail.com">
+                  <FontAwesomeIcon icon={faEnvelope} />
+                  <span style={{ marginLeft: "5px" }}>
+                    meliaalmaty@gmail.com
+                  </span>
+                </a>
+              </div>
+              <div>г. Алматы мамыр 4 дом 5</div>
+            </div>
+          </Col>
+        </Row>
       </Container>
     </div>
   );

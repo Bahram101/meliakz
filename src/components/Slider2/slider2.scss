@@ -1,0 +1,40 @@
+.collectSlider2 {
+	background-image: url('../../assets/images/org_back.png');
+	h2 {
+		text-align: center;
+		font-family: 'Akzidenz-Grotesk';
+		margin-bottom: 25px;
+	}
+	.keen-slider__slide {
+		img {
+			width: 75%;
+		}
+	}
+	.dots {
+		display: flex;
+		align-items: center;
+		.active {
+			background-color: #16faff !important;
+			width: 10px;
+			height: 10px;
+		}
+		.dot {
+			padding: 0;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.collectSlider2 {
+		.keen-slider__slide {
+			img {
+				width: 90% !important;
+			}
+		}
+	}
+	.collectSlider2 {
+		.arrow {
+			display: none;
+		}
+	}
+}
