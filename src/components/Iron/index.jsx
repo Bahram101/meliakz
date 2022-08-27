@@ -9,13 +9,13 @@ export const Iron = () => {
 	return (
 		<>
 			<section className='section iron' style={{ height: '100vh' }}>
-				<Container>
+				<Container className="ironContainer">
 					<Row>
 						<Col className='iron__left' md={6}>
 							<div className='innerCol'>
 								<h2>
 									Гладильная система <br />
-									Melia Gold
+									Melia Black Edition
 								</h2>
 								<p>
 									Это три прибора в одном: утюг, отпариватель

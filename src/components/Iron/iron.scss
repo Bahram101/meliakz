@@ -31,8 +31,10 @@
 	.iron__right {
 		justify-content: right;
 		position: relative;
+		display: flex;
+		justify-content: center;
 		img {
-			width: 90%;
+			width: 70%;
 			filter: drop-shadow(8px 11px 8px hsla(0deg, 0%, 0%, 0.7));
 		}
 	}

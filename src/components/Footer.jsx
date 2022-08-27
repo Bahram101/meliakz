@@ -57,9 +57,9 @@ export const Footer = () => {
 						<h4>Контакты</h4>
 						<ul>
 							<li>
-								<a href='tel:+77011045052'>
+								<a href='tel:+77075045052'>
 									<FontAwesomeIcon icon={faPhone} />
-									<span>+7 (701) 104 5052</span>
+									<span>+7 (707) 504 5052</span>
 								</a>
 							</li>
 							<li>

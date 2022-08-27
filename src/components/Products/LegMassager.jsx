@@ -144,9 +144,9 @@ export const LegMassager = () => {
             <h2>Заявка на бесплатную демонстрацию</h2>
             <div className="">
               <div className="demoContacts">
-                <a href="tel:+77011045052">
+                <a href="tel:+77075045052">
                   <FontAwesomeIcon icon={faPhone} />
-                  <span style={{ marginLeft: "5px" }}>+7 (701) 104-50-52</span>
+                  <span style={{ marginLeft: "5px" }}>+7 (707) 504-50-52</span>
                 </a>
               </div>
               <div>

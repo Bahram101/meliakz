@@ -42,10 +42,10 @@ export const Navs = () => {
 						О нас
 					</a>
 					<a
-						href='tel:+77011045052'
+						href='tel:+77075045052'
 						className='menu-item d-none d-md-block bottomLine'
 					>
-						+7 (707) 104 5052
+						+7 (707) 504-50-52
 					</a>
 					<a
 						href='https://www.instagram.com/melia_kazakhstan/?igshid=1jdbrwo3e49sd'
@@ -55,8 +55,7 @@ export const Navs = () => {
 						<FontAwesomeIcon icon={faInstagram} size='lg' />
 					</a>
 					<a
-						href='https://wa.me/77011045052'
-						// href="https://web.whatsapp.com/send?phone=77071302100"
+						href='https://wa.me/77011045052' 
 						target='_blank'
 						className='menu-item'
 					>
