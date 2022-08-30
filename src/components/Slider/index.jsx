@@ -5,6 +5,22 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./slider.scss";
 import client01 from "../../assets/images/client_01.jpeg";
 import client02 from "../../assets/images/client_02.jpeg";
+import client03 from "../../assets/images/client_03.jpg";
+import client04 from "../../assets/images/client_04.jpg";
+import client05 from "../../assets/images/client_05.jpg";
+import client06 from "../../assets/images/client_06.jpg";
+import client07 from "../../assets/images/client_07.jpg";
+import client08 from "../../assets/images/client_08.jpg";
+import client09 from "../../assets/images/client_09.jpg";
+import client10 from "../../assets/images/client_10.jpg";
+import client11 from "../../assets/images/client_11.jpg";
+import client12 from "../../assets/images/client_12.jpg";
+import client13 from "../../assets/images/client_13.jpg";
+import client14 from "../../assets/images/client_14.jpg";
+import client15 from "../../assets/images/client_15.jpg";
+import client16 from "../../assets/images/client_16.jpg";
+import client17 from "../../assets/images/client_17.jpg";
+import client18 from "../../assets/images/client_18.jpg";
 import img01 from "../../assets/images/01.jpeg";
 import img02 from "../../assets/images/02.jpeg";
 import img03 from "../../assets/images/03.jpeg";
@@ -61,6 +77,54 @@ export const Slider = () => {
                       <div className="keen-slider__slide number-slide2">
                         <img src={client02} />
                       </div>
+                      <div className="keen-slider__slide number-slide3">
+                        <img src={client03} />
+                      </div>
+                      <div className="keen-slider__slide number-slide4">
+                        <img src={client04} />
+                      </div>
+                      <div className="keen-slider__slide number-slide5">
+                        <img src={client05} />
+                      </div>
+                      <div className="keen-slider__slide number-slide6">
+                        <img src={client06} />
+                      </div>
+                      <div className="keen-slider__slide number-slide7">
+                        <img src={client07} />
+                      </div>
+                      <div className="keen-slider__slide number-slide8">
+                        <img src={client08} />
+                      </div>
+                      <div className="keen-slider__slide number-slide9">
+                        <img src={client09} />
+                      </div>
+                      <div className="keen-slider__slide number-slide10">
+                        <img src={client10} />
+                      </div>
+                      <div className="keen-slider__slide number-slide11">
+                        <img src={client11} />
+                      </div>
+                      <div className="keen-slider__slide number-slide12">
+                        <img src={client12} />
+                      </div>
+                      <div className="keen-slider__slide number-slide13">
+                        <img src={client13} />
+                      </div>
+                      <div className="keen-slider__slide number-slide14">
+                        <img src={client14} />
+                      </div>
+                      <div className="keen-slider__slide number-slide15">
+                        <img src={client15} />
+                      </div>
+                      <div className="keen-slider__slide number-slide16">
+                        <img src={client16} />
+                      </div>
+                      <div className="keen-slider__slide number-slide17">
+                        <img src={client17} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client18} />
+                      </div>
                     </div>
                     {loaded && instanceRef.current && (
                       <>
@@ -115,6 +179,9 @@ export const Slider = () => {
               <>
                 <div className="navigation-wrapper">
                   <div ref={sliderRef2} className="keen-slider">
+                    <div className="keen-slider__slide number-slide4">
+                      <img src={img04} />
+                    </div>
                     <div className="keen-slider__slide number-slide1">
                       <img src={img01} />
                     </div>
@@ -123,9 +190,6 @@ export const Slider = () => {
                     </div>
                     <div className="keen-slider__slide number-slide3">
                       <img src={img03} />
-                    </div>
-                    <div className="keen-slider__slide number-slide4">
-                      <img src={img04} />
                     </div>
                     <div className="keen-slider__slide number-slide5">
                       <img src={img05} />

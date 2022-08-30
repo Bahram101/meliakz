@@ -44,6 +44,9 @@ export const Slider2 = () => {
               <>
                 <div className="navigation-wrapper">
                   <div ref={sliderRef} className="keen-slider">
+                    <div className="keen-slider__slide number-slide4">
+                      <img src={img04} />
+                    </div>
                     <div className="keen-slider__slide number-slide1">
                       <img src={img01} />
                     </div>
@@ -52,9 +55,6 @@ export const Slider2 = () => {
                     </div>
                     <div className="keen-slider__slide number-slide3">
                       <img src={img03} />
-                    </div>
-                    <div className="keen-slider__slide number-slide4">
-                      <img src={img04} />
                     </div>
                     <div className="keen-slider__slide number-slide5">
                       <img src={img05} />
