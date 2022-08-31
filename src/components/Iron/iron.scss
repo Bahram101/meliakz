@@ -60,6 +60,13 @@
 		}
 	}
 }
+@media(min-width:768px){
+    .iron{
+        .animated{
+            width: 50%;
+        }
+    }
+}
 
 @media (max-width: 991px) {
 	.iron__left {

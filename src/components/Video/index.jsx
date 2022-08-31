@@ -12,7 +12,7 @@ export const Video = (props) => {
 	}
 
 	return (
-		<section className='section video-block' style={{height:'100vh'}}>
+		<section className='section video-block' style={{ height: "100vh" }}>
 			<img src={logo} alt='лого' />	
 			{/* <video autoPlay id='bgVideo' loop muted playsInline>
 				<source src={video} type='video/mp4' />

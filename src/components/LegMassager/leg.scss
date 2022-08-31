@@ -61,6 +61,13 @@
 		}
 	}
 }
+@media(min-width:768px){
+    .leg-massager{
+        .animated{
+            width: 50%;
+        }
+    }
+}
 @media (max-width: 991px) {
 	.leg-massager {
 		.row {
@@ -101,7 +108,7 @@
 				.innerCol {
 					justify-content: center;
 					img {
-						width: 80% !important;
+						width:70% !important;
 					}
 				}
 			}

@@ -29,9 +29,9 @@ export const Home = () => {
 				return (
 					<div>
 						<Video state={state} />
-						<Iron />
-						<LegMassager />
-						<BackMassager />
+						<Iron state={state}/>
+						<LegMassager state={state}/>
+						<BackMassager state={state}/>
 						<Slider/>
 						<Slider2/>
 						<YandexMap/>
