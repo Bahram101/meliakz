@@ -1,22 +1,31 @@
-import React from 'react';
-import logo from '../../assets/images/logo3.png';
-import './video.scss';
+import React from "react";
+import logo from "../../assets/images/logo3.png";
+import "./video.scss";
+import { Animated } from "react-animated-css";
 
 export const Video = (props) => {
-	const { state } = props;
-	console.log('stateV', state?.destination?.index);
+  //   let sectionCount = 0;
+  const { state } = props;
+  //   sectionCount = state?.destination?.index;
+  //   console.log("sectionCount", sectionCount);
 
-	const player = document.getElementById('bgVideo');
-	if (player) {
-		player.play();
-	}
+  const player = document.getElementById("bgVideo");
+  if (player) {
+    player.play();
+  }
 
-	return (
-		<section className='section video-block' style={{ height: "100vh" }}>
-			<img src={logo} alt='лого' />	
-			{/* <video autoPlay id='bgVideo' loop muted playsInline>
-				<source src={video} type='video/mp4' />
-			</video> */}
-		</section>
-	);
+  return (
+    <section className="section video-block" style={{ height: "100vh" }}>
+      
+      <div className="overlay"></div>
+      <Animated
+        animationIn="bounceInDown"
+        animationOut="slideOutDown"
+        animationInDuration={1400}
+        isVisible="true"
+      >
+        <img src={logo} alt="лого" />
+      </Animated>
+    </section>
+  );
 };
