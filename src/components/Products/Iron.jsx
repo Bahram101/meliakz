@@ -169,7 +169,7 @@ export const Iron = () => {
                   </span>
                 </a>
               </div>
-              <div>г. Алматы мамыр 4 дом 5</div>
+              <div>г. Алматы, мкр. Мамыр 4, 5 </div>
             </div>
           </Col>
         </Row>
