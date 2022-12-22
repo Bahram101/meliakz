@@ -16,20 +16,9 @@ export const Footer = () => {
 					<Col md={4}>
 						<h4>Социальные сети</h4>
 						<div className='socialIcons'>
-							<ul>
+							<ul>								
 								<a
-									href='https://www.instagram.com/melia_kazakhstan/?igshid=1jdbrwo3e49sd'
-									target='_blank'
-								>
-									<li>
-										<FontAwesomeIcon
-											icon={faFacebookF}
-											size='lg'
-										/>
-									</li>
-								</a>
-								<a
-									href='https://www.instagram.com/melia_kazakhstan/?igshid=1jdbrwo3e49sd'
+									href='https://instagram.com/melia.kz/?igshid=YmMyMTA2M2Y='
 									target='_blank'
 								>
 									<li>
