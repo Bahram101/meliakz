@@ -21,6 +21,26 @@ import client15 from "../../assets/images/client_15.jpg";
 import client16 from "../../assets/images/client_16.jpg";
 import client17 from "../../assets/images/client_17.jpg";
 import client18 from "../../assets/images/client_18.jpg";
+import client19 from "../../assets/images/client_19.jpg";
+import client20 from "../../assets/images/client_20.jpg";
+import client21 from "../../assets/images/client_21.jpg";
+import client22 from "../../assets/images/client_22.jpg";
+import client23 from "../../assets/images/client_23.jpg";
+import client24 from "../../assets/images/client_24.jpg";
+import client25 from "../../assets/images/client_25.jpg";
+import client26 from "../../assets/images/client_26.jpg";
+import client27 from "../../assets/images/client_27.jpg";
+import client28 from "../../assets/images/client_28.jpg";
+import client29 from "../../assets/images/client_29.jpg";
+import client30 from "../../assets/images/client_30.jpg";
+import client31 from "../../assets/images/client_31.jpg";
+import client32 from "../../assets/images/client_32.jpg";
+import client33 from "../../assets/images/client_33.jpg";
+import client34 from "../../assets/images/client_34.jpg";
+import client35 from "../../assets/images/client_35.jpg";
+import client36 from "../../assets/images/client_36.jpg";
+import client37 from "../../assets/images/client_37.jpg";
+import client38 from "../../assets/images/client_38.jpg";
 import img01 from "../../assets/images/01.jpeg";
 import img02 from "../../assets/images/02.jpeg";
 import img03 from "../../assets/images/03.jpeg";
@@ -35,6 +55,19 @@ import img11 from "../../assets/images/11.jpeg";
 import img12 from "../../assets/images/12.jpeg";
 import img13 from "../../assets/images/13.jpeg";
 import img14 from "../../assets/images/14.jpeg";
+import img15 from "../../assets/images/15.jpg";
+import img16 from "../../assets/images/16.jpg";
+import img17 from "../../assets/images/17.jpg";
+import img18 from "../../assets/images/18.jpg";
+import img19 from "../../assets/images/19.jpg";
+import img20 from "../../assets/images/20.jpg";
+import img21 from "../../assets/images/21.jpg";
+import img22 from "../../assets/images/22.jpg";
+import img23 from "../../assets/images/23.jpg";
+import img24 from "../../assets/images/24.jpg";
+import img25 from "../../assets/images/25.jpg";
+import img26 from "../../assets/images/26.jpg";
+import img27 from "../../assets/images/27.jpg";
 
 export const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -125,6 +158,66 @@ export const Slider = () => {
                       <div className="keen-slider__slide number-slide18">
                         <img src={client18} />
                       </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client19} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client20} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client21} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client22} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client23} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client24} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client25} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client26} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client27} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client28} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client29} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client30} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client31} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client32} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client33} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client34} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client35} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client36} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client37} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client38} />
+                      </div>
                     </div>
                     {loaded && instanceRef.current && (
                       <>
@@ -155,17 +248,17 @@ export const Slider = () => {
                           instanceRef.current.track.details.slides.length
                         ).keys(),
                       ].map((idx) => {
-                        return (
-                          <button
-                            key={idx}
-                            onClick={() => {
-                              instanceRef.current?.moveToIdx(idx);
-                            }}
-                            className={
-                              "dot" + (currentSlide === idx ? " active" : "")
-                            }
-                          ></button>
-                        );
+                          // return (
+                          // <button
+                          //   key={idx}
+                          //   onClick={() => {
+                          //     instanceRef.current?.moveToIdx(idx);
+                          //   }}
+                          //   className={
+                          //     "dot" + (currentSlide === idx ? " active" : "")
+                          //   }
+                          // ></button>
+                          // );
                       })}
                     </div>
                   )}
@@ -221,6 +314,45 @@ export const Slider = () => {
                     <div className="keen-slider__slide number-slide6">
                       <img src={img14} />
                     </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img15} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img16} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img17} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img18} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img19} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img20} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img21} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img22} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img23} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img24} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img25} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img26} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img27} />
+                    </div>
                   </div>
                   {loaded && instanceRef.current && (
                     <>
@@ -251,17 +383,17 @@ export const Slider = () => {
                         instanceRef2.current.track.details.slides.length
                       ).keys(),
                     ].map((idx) => {
-                      return (
-                        <button
-                          key={idx}
-                          onClick={() => {
-                            instanceRef2.current?.moveToIdx(idx);
-                          }}
-                          className={
-                            "dot" + (currentSlide2 === idx ? " active" : "")
-                          }
-                        ></button>
-                      );
+                      // return (
+                      //   <button
+                      //     key={idx}
+                      //     onClick={() => {
+                      //       instanceRef2.current?.moveToIdx(idx);
+                      //     }}
+                      //     className={
+                      //       "dot" + (currentSlide2 === idx ? " active" : "")
+                      //     }
+                      //   ></button>
+                      // );
                     })}
                   </div>
                 )}

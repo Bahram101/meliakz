@@ -62,28 +62,28 @@ export const Slider2 = () => {
                     <div className="keen-slider__slide number-slide6">
                       <img src={img06} />
                     </div>
-					<div className="keen-slider__slide number-slide7">
+                    <div className="keen-slider__slide number-slide7">
                       <img src={img07} />
                     </div>
-					<div className="keen-slider__slide number-slide8">
+                    <div className="keen-slider__slide number-slide8">
                       <img src={img08} />
                     </div>
-					<div className="keen-slider__slide number-slide9">
+                    <div className="keen-slider__slide number-slide9">
                       <img src={img09} />
                     </div>
-					<div className="keen-slider__slide number-slide10">
+                    <div className="keen-slider__slide number-slide10">
                       <img src={img10} />
                     </div>
-					<div className="keen-slider__slide number-slide11">
+                    <div className="keen-slider__slide number-slide11">
                       <img src={img11} />
                     </div>
-					<div className="keen-slider__slide number-slide12">
+                    <div className="keen-slider__slide number-slide12">
                       <img src={img12} />
                     </div>
-					<div className="keen-slider__slide number-slide13">
+                    <div className="keen-slider__slide number-slide13">
                       <img src={img13} />
                     </div>
-					<div className="keen-slider__slide number-slide14">
+                    <div className="keen-slider__slide number-slide14">
                       <img src={img14} />
                     </div>
                   </div>
