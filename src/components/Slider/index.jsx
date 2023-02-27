@@ -104,61 +104,7 @@ export const Slider = () => {
                 <>
                   <div className="navigation-wrapper">
                     <div ref={sliderRef} className="keen-slider">
-                      <div className="keen-slider__slide number-slide1">
-                        <img src={client01} />
-                      </div>
-                      <div className="keen-slider__slide number-slide2">
-                        <img src={client02} />
-                      </div>
-                      <div className="keen-slider__slide number-slide3">
-                        <img src={client03} />
-                      </div>
-                      <div className="keen-slider__slide number-slide4">
-                        <img src={client04} />
-                      </div>
-                      <div className="keen-slider__slide number-slide5">
-                        <img src={client05} />
-                      </div>
-                      <div className="keen-slider__slide number-slide6">
-                        <img src={client06} />
-                      </div>
-                      <div className="keen-slider__slide number-slide7">
-                        <img src={client07} />
-                      </div>
-                      <div className="keen-slider__slide number-slide8">
-                        <img src={client08} />
-                      </div>
-                      <div className="keen-slider__slide number-slide9">
-                        <img src={client09} />
-                      </div>
-                      <div className="keen-slider__slide number-slide10">
-                        <img src={client10} />
-                      </div>
-                      <div className="keen-slider__slide number-slide11">
-                        <img src={client11} />
-                      </div>
-                      <div className="keen-slider__slide number-slide12">
-                        <img src={client12} />
-                      </div>
-                      <div className="keen-slider__slide number-slide13">
-                        <img src={client13} />
-                      </div>
-                      <div className="keen-slider__slide number-slide14">
-                        <img src={client14} />
-                      </div>
-                      <div className="keen-slider__slide number-slide15">
-                        <img src={client15} />
-                      </div>
-                      <div className="keen-slider__slide number-slide16">
-                        <img src={client16} />
-                      </div>
-                      <div className="keen-slider__slide number-slide17">
-                        <img src={client17} />
-                      </div>
-                      <div className="keen-slider__slide number-slide18">
-                        <img src={client18} />
-                      </div>
-                      <div className="keen-slider__slide number-slide18">
+                    <div className="keen-slider__slide number-slide18">
                         <img src={client19} />
                       </div>
                       <div className="keen-slider__slide number-slide18">
@@ -218,6 +164,61 @@ export const Slider = () => {
                       <div className="keen-slider__slide number-slide18">
                         <img src={client38} />
                       </div>
+                      <div className="keen-slider__slide number-slide1">
+                        <img src={client01} />
+                      </div>
+                      <div className="keen-slider__slide number-slide2">
+                        <img src={client02} />
+                      </div>
+                      <div className="keen-slider__slide number-slide3">
+                        <img src={client03} />
+                      </div>
+                      <div className="keen-slider__slide number-slide4">
+                        <img src={client04} />
+                      </div>
+                      <div className="keen-slider__slide number-slide5">
+                        <img src={client05} />
+                      </div>
+                      <div className="keen-slider__slide number-slide6">
+                        <img src={client06} />
+                      </div>
+                      <div className="keen-slider__slide number-slide7">
+                        <img src={client07} />
+                      </div>
+                      <div className="keen-slider__slide number-slide8">
+                        <img src={client08} />
+                      </div>
+                      <div className="keen-slider__slide number-slide9">
+                        <img src={client09} />
+                      </div>
+                      <div className="keen-slider__slide number-slide10">
+                        <img src={client10} />
+                      </div>
+                      <div className="keen-slider__slide number-slide11">
+                        <img src={client11} />
+                      </div>
+                      <div className="keen-slider__slide number-slide12">
+                        <img src={client12} />
+                      </div>
+                      <div className="keen-slider__slide number-slide13">
+                        <img src={client13} />
+                      </div>
+                      <div className="keen-slider__slide number-slide14">
+                        <img src={client14} />
+                      </div>
+                      <div className="keen-slider__slide number-slide15">
+                        <img src={client15} />
+                      </div>
+                      <div className="keen-slider__slide number-slide16">
+                        <img src={client16} />
+                      </div>
+                      <div className="keen-slider__slide number-slide17">
+                        <img src={client17} />
+                      </div>
+                      <div className="keen-slider__slide number-slide18">
+                        <img src={client18} />
+                      </div>
+                      
                     </div>
                     {loaded && instanceRef.current && (
                       <>
@@ -272,6 +273,45 @@ export const Slider = () => {
               <>
                 <div className="navigation-wrapper">
                   <div ref={sliderRef2} className="keen-slider">
+                  <div className="keen-slider__slide number-slide6">
+                      <img src={img15} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img16} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img17} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img18} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img19} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img20} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img21} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img22} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img23} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img24} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img25} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img26} />
+                    </div>
+                    <div className="keen-slider__slide number-slide6">
+                      <img src={img27} />
+                    </div>
                     <div className="keen-slider__slide number-slide4">
                       <img src={img04} />
                     </div>
@@ -314,45 +354,7 @@ export const Slider = () => {
                     <div className="keen-slider__slide number-slide6">
                       <img src={img14} />
                     </div>
-                    <div className="keen-slider__slide number-slide6">
-                      <img src={img15} />
-                    </div>
-                    <div className="keen-slider__slide number-slide6">
-                      <img src={img16} />
-                    </div>
-                    <div className="keen-slider__slide number-slide6">
-                      <img src={img17} />
-                    </div>
-                    <div className="keen-slider__slide number-slide6">
-                      <img src={img18} />
-                    </div>
-                    <div className="keen-slider__slide number-slide6">
-                      <img src={img19} />
-                    </div>
-                    <div className="keen-slider__slide number-slide6">
-                      <img src={img20} />
-                    </div>
-                    <div className="keen-slider__slide number-slide6">
-                      <img src={img21} />
-                    </div>
-                    <div className="keen-slider__slide number-slide6">
-                      <img src={img22} />
-                    </div>
-                    <div className="keen-slider__slide number-slide6">
-                      <img src={img23} />
-                    </div>
-                    <div className="keen-slider__slide number-slide6">
-                      <img src={img24} />
-                    </div>
-                    <div className="keen-slider__slide number-slide6">
-                      <img src={img25} />
-                    </div>
-                    <div className="keen-slider__slide number-slide6">
-                      <img src={img26} />
-                    </div>
-                    <div className="keen-slider__slide number-slide6">
-                      <img src={img27} />
-                    </div>
+                    
                   </div>
                   {loaded && instanceRef.current && (
                     <>
