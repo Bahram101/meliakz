@@ -36,7 +36,7 @@ export const YandexMap = () => {
 										</span>
 									</a>
 								</div>
-								<div>г. Алматы мамыр 4 дом 5</div>
+								<div>г. Алматы, ул. Афцинао 34 </div>
 							</div>
 						</Col>
 					</Row>

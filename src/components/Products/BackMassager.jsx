@@ -198,7 +198,7 @@ export const BackMassager = () => {
 									</span>
 								</a>
 							</div>
-							<div>г. Алматы, мкр. Мамыр 4, 5 </div>
+							<div>г. Алматы, ул. Афцинао 34  </div>
 						</div>
 					</Col>
 				</Row>
