@@ -47,11 +47,11 @@ export const YandexMap = () => {
 					<Map
 						style={{ width: '100wh', height: '100vh' }}
 						defaultState={{
-							center: [43.215065, 76.840982],
+							center: [43.207141, 76.832870],
 							zoom: 15, 
 						}}
 					>
-						<Placemark geometry={[43.215065, 76.840982]} />
+						<Placemark geometry={[43.207141, 76.832870]} />
 						<ZoomControl options={{ float: 'left' }} />
 						<FullscreenControl options={{ float: 'left' }} />
 					</Map>
