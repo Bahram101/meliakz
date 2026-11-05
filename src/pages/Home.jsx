@@ -1,44 +1,36 @@
-import React  from 'react';
+import { Hero } from '../components/home/Hero';
+import { ProductTeaser } from '../components/home/ProductTeaser';
+import { GallerySection } from '../components/home/GallerySection';
+import { ContactSection } from '../components/home/ContactSection';
+import { SectionDots } from '../components/home/SectionDots';
+import { Footer } from '../components/layout/Footer';
+import { products } from '../data/products';
+import { useActiveSection } from '../hooks/useActiveSection';
 
-import { Video } from '../components/Video';
-import { Iron } from '../components/Iron';
-import { LegMassager } from '../components/LegMassager';
-import { BackMassager } from '../components/BackMassager';
-import ReactFullpage from '@fullpage/react-fullpage';
-import { Footer } from '../components/Footer';
-import { YandexMap } from '../components/YandexMap';
-import { Slider } from '../components/Slider';
-import { Slider2 } from '../components/Slider2';
+// Подписи точек навигации — в том же порядке, что и секции ниже.
+const SECTION_LABELS = ['Главная', ...products.map((p) => p.name), 'Клиенты и команда', 'Контакты', 'Подвал'];
+const FIRST_PRODUCT_INDEX = 1;
 
 export const Home = () => {
+	const { containerRef, activeIndex, scrollTo } = useActiveSection();
+
 	return (
-		<ReactFullpage
-			anchors={{}}
-			navigation
-			navigationTooltips={{}}
-			navigat
-			onLeave={(origin, destination, direction) => {
-				console.log('onLeave event', {
-					origin,
-					destination,
-					direction,
-				});
-			}}
-			render={({ state, fullpageApi }) => {
-				console.log('state', state);
-				return (
-					<div>
-						<Video state={state} />
-						<Iron state={state}/>
-						<LegMassager state={state}/>
-						<BackMassager state={state}/>
-						<Slider/>
-						<Slider2/>
-						<YandexMap/>
-						<Footer />
-					</div>
-				);
-			}}
-		/>
+		<>
+			<div className='home' ref={containerRef}>
+				<Hero />
+				{products.map((product, i) => (
+					<ProductTeaser
+						key={product.id}
+						product={product}
+						reversed={i % 2 === 1}
+						isActive={activeIndex === FIRST_PRODUCT_INDEX + i}
+					/>
+				))}
+				<GallerySection />
+				<ContactSection />
+				<Footer className='section' />
+			</div>
+			<SectionDots labels={SECTION_LABELS} activeIndex={activeIndex} onSelect={scrollTo} />
+		</>
 	);
 };

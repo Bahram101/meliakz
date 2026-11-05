@@ -1,0 +1,69 @@
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	min-height: 52px;
+	padding: 0 24px;
+	border: 1px solid transparent;
+	border-radius: 999px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	transition: transform var(--ease), background var(--ease), border-color var(--ease), color var(--ease);
+
+	&:hover {
+		transform: translateY(-2px);
+	}
+
+	&--primary {
+		background: var(--mint);
+		color: var(--ink);
+		box-shadow: 0 10px 30px rgba(131, 228, 210, 0.16);
+
+		&:hover {
+			background: var(--mint-bright);
+			color: var(--ink);
+		}
+	}
+
+	&--ghost {
+		border-color: rgba(243, 247, 245, 0.25);
+		background: rgba(243, 247, 245, 0.05);
+		color: var(--paper);
+
+		&:hover {
+			border-color: var(--mint);
+			background: rgba(131, 228, 210, 0.1);
+			color: var(--mint-bright);
+		}
+	}
+}
+
+// Круглая кнопка с иконкой: соцсети, меню, стрелки слайдеров.
+.icon-button,
+.carousel__arrow {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 42px;
+	height: 42px;
+	padding: 0;
+	border: 1px solid var(--line);
+	border-radius: 50%;
+	background: transparent;
+	color: var(--paper);
+	cursor: pointer;
+	transition: border-color var(--ease), background var(--ease), color var(--ease), opacity var(--ease);
+
+	&:hover {
+		border-color: var(--mint);
+		background: rgba(131, 228, 210, 0.1);
+		color: var(--mint);
+	}
+}
+
+.social-links {
+	display: flex;
+	gap: 10px;
+}

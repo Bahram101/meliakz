@@ -1,0 +1,104 @@
+@use 'mixins' as *;
+
+// Общий слайдер (компонент Carousel): слайды, под ними стрелки и индикатор.
+.carousel {
+	&__slide {
+		display: flex;
+		justify-content: center;
+		min-width: 0;
+	}
+
+	&__controls {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 12px;
+		margin-top: 20px;
+	}
+
+	&__arrow {
+		width: 44px;
+		height: 44px;
+		padding: 13px;
+		background: rgba(17, 25, 27, 0.7);
+		fill: currentColor;
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+
+		&:disabled {
+			opacity: 0.35;
+			pointer-events: none;
+		}
+
+		@include phone {
+			width: 40px;
+			height: 40px;
+			padding: 12px;
+		}
+	}
+
+	&__counter {
+		min-width: 64px;
+		color: var(--muted);
+		font-size: 14px;
+		font-variant-numeric: tabular-nums;
+		text-align: center;
+	}
+
+	&__dots {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 8px;
+	}
+
+	&__dot {
+		width: 8px;
+		height: 8px;
+		padding: 0;
+		border: 0;
+		border-radius: 999px;
+		background: rgba(243, 247, 245, 0.3);
+		cursor: pointer;
+		transition: width var(--ease), background var(--ease);
+
+		&.is-active {
+			width: 24px;
+			background: var(--mint);
+		}
+	}
+}
+
+// Рамка 4:3: фото целиком, поля — размытая копия снимка (--photo).
+.photo-frame {
+	position: relative;
+	width: min(100%, 560px, 52vh * 4 / 3);
+	aspect-ratio: 4 / 3;
+	overflow: hidden;
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+	background: var(--surface);
+	box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+
+	&::before {
+		position: absolute;
+		inset: -24px;
+		content: '';
+		background: var(--photo) center / cover no-repeat;
+		filter: blur(24px) brightness(0.55);
+	}
+
+	img {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	@include phone {
+		width: 100%;
+	}
+}

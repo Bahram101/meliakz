@@ -1,36 +1,19 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ofis from "../assets/images/ofis.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { BackLink } from '../components/ui/BackLink';
+import office from '../assets/images/ofis.png';
 
-export const About = () => {
-  return (
-    <div className="aboutUs">
-      <Container>
-        <Row className="row1">
-          <a href="/">
-            <span>
-              <FontAwesomeIcon icon={faChevronLeft} size="sm" /> Вернуться
-            </span>
-          </a>
-        </Row>
-        <Row className="row2">
-          <Col>
-            <h2>О нашей компании</h2>
-            <p>
-              Компания занимается организацией международного маркетинга и О
-              КОМПАНИИ продажей продукции «MELIA KAZAKHSTAN» Компания «MELIA
-              KAZAKHSTAN» на постоянной основе занимается научными
-              исследованиями и инновационными технологиями Компания «MELIA
-              KAZAKHSTAN» имеет тысячи довольных клиентов по всему Казахстану
-            </p>
-          </Col>
-        </Row>
-      </Container>
-      <div className="imgBlock">
-        <img src={ofis} alt="" />
-      </div>
-    </div>
-  );
-};
+export const About = () => (
+	<div className='page about'>
+		<div className='container'>
+			<BackLink />
+			<h1 className='page__title'>О нашей компании</h1>
+			<p className='about__text'>
+				Компания «Melia Kazakhstan» занимается международным маркетингом и продажей продукции Melia. Мы постоянно
+				следим за научными исследованиями и внедряем инновационные технологии. У нас тысячи довольных клиентов по
+				всему Казахстану.
+			</p>
+			<figure className='about__photo'>
+				<img src={office} alt='Офис Melia Kazakhstan' />
+			</figure>
+		</div>
+	</div>
+);

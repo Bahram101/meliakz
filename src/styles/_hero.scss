@@ -1,0 +1,112 @@
+@use 'mixins' as *;
+
+.hero {
+	display: flex;
+	align-items: center;
+	isolation: isolate;
+	overflow: clip; // свечение __glow выходит за край экрана
+	background: #172124 url('../assets/images/back2.jpg') center / cover no-repeat;
+
+	&::before {
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		content: '';
+		background:
+			linear-gradient(90deg, rgba(10, 17, 19, 0.94), rgba(10, 17, 19, 0.78) 43%, rgba(10, 17, 19, 0.2)),
+			linear-gradient(0deg, rgba(10, 17, 19, 0.6), transparent 50%);
+	}
+
+	&__glow {
+		position: absolute;
+		z-index: -1;
+		right: -12vw;
+		bottom: -25vw;
+		width: 46vw;
+		aspect-ratio: 1;
+		border-radius: 50%;
+		background: rgba(131, 228, 210, 0.12);
+		filter: blur(4px);
+	}
+
+	&__content {
+		padding-top: var(--header-height);
+		animation: rise-in 850ms both;
+	}
+
+	&__kicker {
+		margin-bottom: 24px;
+		color: var(--mint);
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+	}
+
+	&__title {
+		max-width: 800px;
+		font-size: clamp(46px, 7.2vw, 100px);
+		line-height: 0.99;
+
+		span {
+			color: var(--mint-bright);
+		}
+	}
+
+	&__lead {
+		max-width: 520px;
+		margin-top: 28px;
+		color: rgba(243, 247, 245, 0.76);
+		font-size: clamp(15px, 1.5vw, 19px);
+		line-height: 1.7;
+	}
+
+	&__actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 14px;
+		margin-top: 36px;
+	}
+
+	&__scroll {
+		position: absolute;
+		left: var(--page-pad);
+		bottom: 28px;
+		color: rgba(243, 247, 245, 0.65);
+		font-size: 11px;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+
+		&::before {
+			display: inline-block;
+			width: 36px;
+			height: 1px;
+			margin: 0 12px 4px 0;
+			content: '';
+			background: var(--mint);
+		}
+	}
+
+	@include phone {
+		min-height: 88svh;
+		align-items: flex-end;
+		padding-bottom: 86px;
+		background-position: 62% center;
+
+		&::before {
+			background: linear-gradient(0deg, rgba(10, 17, 19, 0.97), rgba(10, 17, 19, 0.52) 72%, rgba(10, 17, 19, 0.32));
+		}
+
+		&__lead {
+			margin-top: 20px;
+		}
+
+		&__actions {
+			margin-top: 26px;
+		}
+
+		&__scroll {
+			bottom: 24px;
+		}
+	}
+}

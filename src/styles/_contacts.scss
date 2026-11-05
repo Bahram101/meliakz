@@ -1,0 +1,76 @@
+@use 'mixins' as *;
+
+.contact-list {
+	display: flex;
+	gap: 12px 30px;
+	color: var(--muted);
+
+	&--row {
+		flex-wrap: wrap;
+		justify-content: center;
+
+		@include phone {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&--column {
+		flex-direction: column;
+	}
+
+	li,
+	a {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	a {
+		transition: color var(--ease);
+
+		&:hover {
+			color: var(--mint);
+		}
+	}
+}
+
+.demo-request {
+	text-align: center;
+
+	&__title {
+		margin-bottom: 26px;
+		font-size: clamp(26px, 4vw, 48px);
+	}
+}
+
+.contact-section {
+	display: flex;
+	flex-direction: column;
+	background: var(--ink-soft);
+
+	.demo-request {
+		padding: calc(var(--header-height) + 20px) 0 52px;
+	}
+}
+
+.office-map {
+	position: relative;
+	// Свой слой: кнопки Leaflet (z-index: 1000) не перекроют шапку сайта.
+	isolation: isolate;
+	flex: 1;
+	min-height: 300px;
+	background: var(--surface);
+
+	&__canvas {
+		position: absolute;
+		inset: 0;
+	}
+
+	&__route {
+		position: absolute;
+		z-index: 1001; // поверх карты Leaflet
+		left: 16px; // справа — точки навигации секций
+		bottom: 28px;
+	}
+}

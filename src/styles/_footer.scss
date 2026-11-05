@@ -1,0 +1,39 @@
+@use 'mixins' as *;
+
+// На главной подвал ещё и .section, поэтому min-height сбрасываем явно.
+.footer {
+	display: flex;
+	align-items: center;
+	min-height: auto;
+	padding: 55px 0;
+	border-top: 1px solid var(--line);
+	background: var(--ink-deep);
+	font-size: 14px;
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 32px;
+	}
+
+	&__title {
+		margin-bottom: 18px;
+		color: var(--mint-bright);
+		font-size: 16px;
+		letter-spacing: 0;
+	}
+
+	&__copy {
+		grid-column: 1 / -1;
+		color: var(--muted);
+		font-size: 13px;
+	}
+
+	@include phone {
+		padding: 42px 0;
+
+		&__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+}

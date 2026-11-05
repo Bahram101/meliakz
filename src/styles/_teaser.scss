@@ -1,0 +1,119 @@
+@use 'mixins' as *;
+
+// Секция товара на главной.
+.teaser {
+	display: flex;
+	align-items: center;
+	padding: calc(var(--header-height) + 48px) 0 80px;
+	background:
+		radial-gradient(ellipse at 82% 50%, rgba(131, 228, 210, 0.11), transparent 36%),
+		linear-gradient(135deg, #172124, var(--ink) 65%);
+
+	&--reversed {
+		--slide-from: -80px;
+		background:
+			radial-gradient(ellipse at 20% 50%, rgba(131, 228, 210, 0.1), transparent 38%),
+			linear-gradient(135deg, #1b292b, var(--ink) 70%);
+	}
+
+	&__grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		gap: 30px;
+	}
+
+	&--reversed &__media {
+		order: -1;
+	}
+
+	&__text {
+		animation: rise-in 700ms both;
+	}
+
+	&__title {
+		margin-bottom: 22px;
+		font-size: clamp(38px, 5vw, 70px);
+	}
+
+	&__description {
+		max-width: 580px;
+		margin-bottom: 32px;
+		color: var(--muted);
+		font-size: 16px;
+		line-height: 1.8;
+	}
+
+	&__media {
+		position: relative;
+		display: grid;
+		place-items: center;
+		min-height: 420px;
+		opacity: 0;
+
+		&::before {
+			position: absolute;
+			width: min(34vw, 460px);
+			aspect-ratio: 1;
+			border: 1px solid rgba(180, 243, 223, 0.2);
+			border-radius: 50%;
+			content: '';
+			background: radial-gradient(circle, rgba(131, 228, 210, 0.12), rgba(131, 228, 210, 0.02) 60%, transparent 70%);
+		}
+
+		img {
+			position: relative;
+			width: min(82%, 520px);
+			max-height: 62vh;
+			object-fit: contain;
+			filter: drop-shadow(0 28px 36px rgba(0, 0, 0, 0.3));
+			animation: float 6s ease-in-out infinite;
+		}
+	}
+
+	// Картинка «въезжает» при первом появлении секции.
+	&.is-shown &__media {
+		animation: slide-in 1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+	}
+
+	@include tablet {
+		&__media {
+			min-height: 320px;
+
+			&::before {
+				width: min(50vw, 400px);
+			}
+		}
+	}
+
+	@include phone {
+		min-height: 0;
+		padding: calc(var(--header-height) + 32px) 0 76px;
+
+		&__grid {
+			grid-template-columns: 1fr;
+			gap: 12px;
+		}
+
+		&--reversed &__media {
+			order: 1;
+		}
+
+		&__description {
+			font-size: 15px;
+		}
+
+		&__media {
+			min-height: 280px;
+
+			&::before {
+				width: min(74vw, 310px);
+			}
+
+			img {
+				width: min(78%, 330px);
+				max-height: 34vh;
+			}
+		}
+	}
+}
