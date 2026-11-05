@@ -33,7 +33,7 @@
 
 	&__title {
 		margin-bottom: 22px;
-		font-size: clamp(38px, 5vw, 70px);
+		font-size: clamp(30px, 5vw, 70px);
 	}
 
 	&__description {
@@ -63,7 +63,7 @@
 
 		img {
 			position: relative;
-			width: min(82%, 520px);
+			width: calc(min(82%, 520px) * var(--image-scale, 1));
 			max-height: 62vh;
 			object-fit: contain;
 			filter: drop-shadow(0 28px 36px rgba(0, 0, 0, 0.3));
@@ -111,7 +111,7 @@
 			}
 
 			img {
-				width: min(78%, 330px);
+				width: calc(min(78%, 330px) * var(--image-scale, 1));
 				max-height: 34vh;
 			}
 		}

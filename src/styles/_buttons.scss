@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 .button {
 	display: inline-flex;
 	align-items: center;
@@ -14,6 +16,11 @@
 
 	&:hover {
 		transform: translateY(-2px);
+	}
+
+	@include phone {
+		min-height: 46px;
+		padding: 0 20px;
 	}
 
 	&--primary {

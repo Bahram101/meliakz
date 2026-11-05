@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // Секция товара на главной. reversed — картинка слева, текст справа.
 // Картинка «въезжает» при первом появлении секции на экране и дальше остаётся видимой.
 export const ProductTeaser = ({ product, reversed = false, isActive = false }) => {
-	const { id, title, description, images } = product;
+	const { id, title, description, images, teaserScale = 1 } = product;
 	const [shown, setShown] = useState(isActive);
 
 	useEffect(() => {
@@ -23,7 +23,7 @@ export const ProductTeaser = ({ product, reversed = false, isActive = false }) =
 						Подробнее
 					</Link>
 				</div>
-				<div className='teaser__media'>
+				<div className='teaser__media' style={{ '--image-scale': teaserScale }}>
 					<img src={images[0]} alt={title} loading='lazy' decoding='async' />
 				</div>
 			</div>

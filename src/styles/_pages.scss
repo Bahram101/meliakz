@@ -8,7 +8,7 @@
 
 	&__title {
 		margin: 42px 0;
-		font-size: clamp(36px, 5.5vw, 68px);
+		font-size: clamp(30px, 5.5vw, 68px);
 
 		@include phone {
 			margin: 28px 0;

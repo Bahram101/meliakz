@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-
-const SECTION_SELECTOR = ':scope > .section';
+import { useWheelPaging } from './useWheelPaging';
+import { getSections } from './sections';
 
 /**
- * Постраничная прокрутка (CSS scroll-snap) и номер секции, которая сейчас на экране.
+ * Постраничная прокрутка главной и номер секции, которая сейчас на экране.
  * Возвращает ref для контейнера секций, активный индекс и функцию перехода к секции.
  */
 export const useActiveSection = () => {
@@ -14,7 +14,7 @@ export const useActiveSection = () => {
 		const root = document.documentElement;
 		root.classList.add('snap-page');
 
-		const sections = [...containerRef.current.querySelectorAll(SECTION_SELECTOR)];
+		const sections = getSections(containerRef.current);
 		const observer = new IntersectionObserver(
 			(entries) =>
 				entries
@@ -32,8 +32,10 @@ export const useActiveSection = () => {
 	}, []);
 
 	const scrollTo = useCallback((index) => {
-		containerRef.current.querySelectorAll(SECTION_SELECTOR)[index]?.scrollIntoView({ behavior: 'smooth' });
+		getSections(containerRef.current)[index]?.scrollIntoView({ behavior: 'smooth' });
 	}, []);
+
+	useWheelPaging(containerRef, activeIndex, scrollTo);
 
 	return { containerRef, activeIndex, scrollTo };
 };
