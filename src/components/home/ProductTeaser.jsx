@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // Секция товара на главной. reversed — картинка слева, текст справа.
@@ -6,10 +6,7 @@ import { Link } from 'react-router-dom';
 export const ProductTeaser = ({ product, reversed = false, isActive = false }) => {
 	const { id, title, description, images, teaserScale = 1 } = product;
 	const [shown, setShown] = useState(isActive);
-
-	useEffect(() => {
-		if (isActive) setShown(true);
-	}, [isActive]);
+	if (isActive && !shown) setShown(true); // обновление state во время рендера — без лишнего прохода эффекта
 
 	const classes = ['section', 'teaser', reversed && 'teaser--reversed', shown && 'is-shown'];
 

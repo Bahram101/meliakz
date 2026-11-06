@@ -10,8 +10,11 @@ const INERTIA_GAP_MS = 150; // пауза между событиями коле
  * На телефонах и планшетах (без мыши) остаётся обычная прокрутка.
  */
 export const useWheelPaging = (containerRef, activeIndex, scrollTo) => {
+	// Обработчик колеса вешается один раз, а активную секцию читает из ref.
 	const activeRef = useRef(activeIndex);
-	activeRef.current = activeIndex;
+	useEffect(() => {
+		activeRef.current = activeIndex;
+	}, [activeIndex]);
 
 	useEffect(() => {
 		if (!window.matchMedia('(pointer: fine)').matches) return undefined;

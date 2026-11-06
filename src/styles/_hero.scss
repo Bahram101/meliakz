@@ -82,7 +82,7 @@
 		min-height: 88svh;
 		align-items: flex-end;
 		// Текст в нижней трети, но не прижат к краю — фото товара остаётся свободным сверху.
-		padding-bottom: clamp(56px, 14svh, 130px);
+		padding-bottom: clamp(64px, 20svh, 200px);
 		background-position: 62% center;
 
 		&::before {

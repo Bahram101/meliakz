@@ -1,8 +1,12 @@
 // Фото клиентов (client_XX) и команды (XX) из src/assets/images.
-const images = require.context('../assets/images', false, /^\.\/(client_)?\d+\.jpe?g$/);
+const images = import.meta.glob(
+	['../assets/images/[0-9]*.{jpg,jpeg}', '../assets/images/client_*.{jpg,jpeg}'],
+	{ eager: true, import: 'default' }
+);
 
+// '../assets/images/client_07.jpg' → 'client_07'
 const byName = Object.fromEntries(
-	images.keys().map((key) => [key.replace(/^\.\/|\.\w+$/g, ''), images(key)])
+	Object.entries(images).map(([path, url]) => [path.replace(/^.*\/|\.\w+$/g, ''), url])
 );
 
 const range = (from, to) =>
