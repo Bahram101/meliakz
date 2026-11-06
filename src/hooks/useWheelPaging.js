@@ -7,7 +7,7 @@ const INERTIA_GAP_MS = 150; // пауза между событиями коле
 /**
  * Один шаг колеса мыши — переход к соседней секции (как раньше в fullpage.js).
  * Секции выше экрана сначала прокручиваются обычным образом до своего края.
- * На телефонах и планшетах (без мыши) остаётся обычный свайп с CSS scroll-snap.
+ * На телефонах и планшетах (без мыши) остаётся обычная прокрутка.
  */
 export const useWheelPaging = (containerRef, activeIndex, scrollTo) => {
 	const activeRef = useRef(activeIndex);

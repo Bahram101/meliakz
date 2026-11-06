@@ -34,15 +34,6 @@
 		animation: rise-in 850ms both;
 	}
 
-	&__kicker {
-		margin-bottom: 24px;
-		color: var(--mint);
-		font-size: 12px;
-		font-weight: 700;
-		letter-spacing: 0.2em;
-		text-transform: uppercase;
-	}
-
 	&__title {
 		max-width: 800px;
 		font-size: clamp(36px, 7.2vw, 100px);
@@ -90,23 +81,22 @@
 	@include phone {
 		min-height: 88svh;
 		align-items: flex-end;
-		padding-bottom: 86px;
+		// Текст в нижней трети, но не прижат к краю — фото товара остаётся свободным сверху.
+		padding-bottom: clamp(56px, 14svh, 130px);
 		background-position: 62% center;
 
 		&::before {
 			background: linear-gradient(0deg, rgba(10, 17, 19, 0.97), rgba(10, 17, 19, 0.52) 72%, rgba(10, 17, 19, 0.32));
 		}
 
-		&__lead {
-			margin-top: 20px;
+		// На телефоне — только заголовок и кнопки: остальное перегружает первый экран.
+		&__lead,
+		&__scroll {
+			display: none;
 		}
 
 		&__actions {
-			margin-top: 26px;
-		}
-
-		&__scroll {
-			bottom: 24px;
+			margin-top: 32px;
 		}
 	}
 }

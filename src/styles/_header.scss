@@ -5,7 +5,7 @@
 	inset: 0 0 auto;
 	z-index: 1000;
 	height: var(--header-height);
-	border-bottom: 1px solid rgba(198, 235, 226, 0.09);
+	border-bottom: 0.5px solid rgba(131, 228, 210, 0.4); // --mint, приглушённый; на Retina — половина пикселя
 	background: rgba(17, 25, 27, 0.72);
 	backdrop-filter: blur(18px);
 

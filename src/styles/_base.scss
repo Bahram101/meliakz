@@ -117,13 +117,16 @@ ul {
 	background: var(--ink-soft);
 }
 
-// Постраничная прокрутка главной. Класс на <html> ставит хук useActiveSection.
-html.snap-page {
-	scroll-snap-type: y proximity;
-}
+// Постраничная прокрутка главной — только с мышью. На сенсорных экранах обычный скролл.
+// Класс на <html> ставит хук useActiveSection.
+@media (pointer: fine) {
+	html.snap-page {
+		scroll-snap-type: y proximity;
+	}
 
-.home > .section {
-	scroll-snap-align: start;
+	.home > .section {
+		scroll-snap-align: start;
+	}
 }
 
 @keyframes rise-in {

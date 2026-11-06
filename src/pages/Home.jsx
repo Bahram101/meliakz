@@ -17,7 +17,7 @@ export const Home = () => {
 	return (
 		<>
 			<div className='home' ref={containerRef}>
-				<Hero />
+				<Hero onShowProducts={() => scrollTo(FIRST_PRODUCT_INDEX)} />
 				{products.map((product, i) => (
 					<ProductTeaser
 						key={product.id}

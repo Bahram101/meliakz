@@ -12,6 +12,7 @@
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 1;
+	cursor: pointer;
 	transition: transform var(--ease), background var(--ease), border-color var(--ease), color var(--ease);
 
 	&:hover {
